@@ -52,8 +52,8 @@ def predict_data(model_path, input_path, output_path):
     print(f"Predicted 1s: {sum(predictions == 1)}")
 
 if __name__ == "__main__":
-    MODEL_PATH = "inlining_decision_model.json"
-    INPUT_PATH = "../data/akka-uct_data_r12.csv" 
-    OUTPUT_PATH = "../ml_results/predictions.csv"
+    MODEL_PATH = "/root/Projects/graal_scripts/ml_code/inlining_decision_model.json"
+    INPUT_PATH = "/root/Projects/data.csv" 
+    OUTPUT_PATH = "/root/Projects/predictions.csv"
     
     predict_data(MODEL_PATH, INPUT_PATH, OUTPUT_PATH)
